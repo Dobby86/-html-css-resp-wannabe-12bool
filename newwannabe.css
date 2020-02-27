@@ -1,0 +1,141 @@
+.container {
+  max-width: 1192px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row > .left, #lezioni .row > .right{
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row > .left,
+#steps .row > .central,
+#steps .row > .right{
+  float: left;
+  width: 33%;
+}
+
+#steps{
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row > .first,
+#why .row > .second,
+#why .row > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+  padding:30px
+}
+
+img{
+  height: 200px;
+}
+.container::after {
+  clear:both;
+  content: "";
+  display: table;
+}
+
+/* -------------------------PARTE MODDATA---- */
+
+@media screen and (max-width: 767px ) {
+    [class *="col-"] {
+        float: left;
+    }
+  .row {
+    background-color: red;
+    max-width:150%;
+    margin-left:0px;
+    margin-right: 0;
+    margin-top: 0;
+
+}
+#lezioni .row > .left ,  #lezioni .row > .right{
+  width: 100%;
+  float: none;
+
+ }
+ #steps .row > .left,
+#steps .row > .central,
+#steps .row > .right{
+  float:left;
+  width:100%;
+
+}
+.left>img {
+    height: 400px;
+}
+.right>img {
+    height: 270px;
+}
+.first>img {
+    height: 200px;
+}
+.second> img {
+    height: 200px;
+}
+.third> img {
+    height:200px;
+}
+#lezioni >h3 {
+    text-align: right;
+}
+
+}
+.clearfix-xs, .clearfix-md, .clearfix-lg  {
+ clear: both;
+ display: none;
+}
+
+@media screen and (min-width:768px) and (max-width: 991px )
+ {
+    
+    .col-md-4 {
+        background-color: yellow;
+
+    }
+    .col-md-12 {
+        background-color: yellow;
+
+    }
+    [class *="col-"] {
+        float: left;
+    }
+}
+@media screen and (min-width: 992px ) {
+    .col-lg-4 {
+        background-color: pink;
+    }
+    [class *="col-"] {
+        float: left;
+    }
+    .col-lg-offset-4 {
+        background-color:orange;
+    }
+
+}
